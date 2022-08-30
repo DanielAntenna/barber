@@ -1,0 +1,85 @@
+.reasons-container {
+  display: flex;
+
+  &-count::after {
+    content: "+";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    color: $accentC;
+  }
+  
+  &-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  
+  &-item:nth-child(even) {
+    margin-top: 30px;
+  }
+
+
+
+
+}
+
+.reasons-list {
+  width: 370px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reasons-item {
+  width: 170px;
+  height: 133px;
+  padding: 20px 24px;
+  text-align: center;
+  background-color: $primaryTitl;
+}
+
+.reasons-item-dif {
+  padding: 20px;
+  letter-spacing: 0em;
+}
+
+.reasons-count {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: calc(57 / 42);
+  text-align: center;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+
+  color: $secondTitl;
+  display: flex;
+  justify-content: center;
+}
+
+
+
+.reasons-item-text {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-align: center;
+  color: $secondText;
+}
+
+.reasons-pre-title {
+  margin-bottom: 20px;
+}
+
+.reasons-title {
+  color: $secondTitl;
+  margin-bottom: 20px;
+}
+
+.reasons-after-title {
+  color: $secondText;
+}
+
+.reasons-left {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  flex-shrink: 0;
+}

@@ -1,0 +1,85 @@
+/*----------- HEADER------------- */
+
+.header {
+  position: absolute;
+  width: 100%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 70px;
+}
+
+.logo-icon {
+  fill: $secondTitl;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.header-contact {
+  padding-right: 10px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: $headText;
+  position: relative;
+  transition: color 300ms ease;
+}
+
+.header-link:hover,
+.header-link:focus {
+  color: $accentC;
+}
+
+.header-tel-link {
+  margin-right: 40px;
+}
+
+.header-tel-link {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: $headText;
+}
+
+.header-btn {
+  color: $headText;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: $accentC;
+  display: block;
+  bottom: -50px;
+}

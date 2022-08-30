@@ -1,0 +1,15 @@
+.btn-number {
+  border-radius: 4px;
+  padding: 20px 30px;
+  background-color: #090b13;
+  color: aqua;
+  cursor: pointer;
+  box-shadow: 2px 2px 2px;
+  width: 200px;
+
+
+&:hover {
+  background-color: brown;
+  color: tomato;
+}
+}
